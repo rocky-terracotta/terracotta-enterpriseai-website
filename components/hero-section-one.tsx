@@ -15,8 +15,8 @@ export default function HeroSection() {
                         <div className="relative z-10 mx-auto w-full max-w-5xl px-6">
                             <div className="md:w-1/2">
                                 <div>
-                                    <h1 className="max-w-md text-balance text-5xl font-medium md:text-6xl">Simple payments for startups</h1>
-                                    <p className="text-muted-foreground my-8 max-w-2xl text-balance text-xl">One tool that does it all. Search, generate, analyze, and chat—right inside Tailark.</p>
+                                    <h1 className="max-w-md text-balance text-5xl font-medium md:text-6xl">Use AI without sending data to the cloud.</h1>
+                                    <p className="text-muted-foreground my-8 max-w-2xl text-balance text-xl">Your own private AI assistant deployed on-site. <br></br>Works out of the box.<br></br>No IT team required.</p>
 
                                     <div className="flex items-center gap-3">
                                         <Button
@@ -24,11 +24,11 @@ export default function HeroSection() {
                                             size="lg"
                                             className="pr-4.5">
                                             <Link href="#link">
-                                                <span className="text-nowrap">Get Started</span>
+                                                <span className="text-nowrap">Book a Demo</span>
                                                 <ChevronRight className="opacity-50" />
                                             </Link>
                                         </Button>
-                                        <Button
+                                        {/* <Button
                                             key={2}
                                             asChild
                                             size="lg"
@@ -38,18 +38,18 @@ export default function HeroSection() {
                                                 <CirclePlay className="fill-primary/25 stroke-primary" />
                                                 <span className="text-nowrap">Watch video</span>
                                             </Link>
-                                        </Button>
+                                        </Button> */}
                                     </div>
                                 </div>
 
-                                <div className="mt-10">
-                                    <p className="text-muted-foreground">Trusted by teams at :</p>
+                                {/* <div className="mt-10">
+                                    <p className="text-muted-foreground">Backed by China's Leading AI Fund</p>
                                     <div className="mt-6 grid max-w-sm grid-cols-3 gap-6">
                                         <div className="flex">
                                             <img
-                                                className="h-4 w-fit"
-                                                src="https://html.tailus.io/blocks/customers/column.svg"
-                                                alt="Column Logo"
+                                                className="w-fit"
+                                                src="/miracleplus.png"
+                                                alt="MiraclePlus Logo"
                                                 height="16"
                                                 width="auto"
                                             />
@@ -73,7 +73,7 @@ export default function HeroSection() {
                                             />
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
