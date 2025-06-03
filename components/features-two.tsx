@@ -32,24 +32,40 @@ export default function Features() {
                         </div>
                         <div className="space-y-4">
                             <Card
-                                className="aspect-video overflow-hidden p-6"
+                                className="aspect-video overflow-hidden px-6"
                                 variant="soft">
-                                <Card className="h-full" />
+                                <div className="flex h-full items-center justify-center">
+                                    <Image
+                                        src="/qwen3.png"
+                                        alt="Qwen3"
+                                        width="3944"
+                                        height="1555"
+                                        className="object-contain"
+                                    />
+                                </div>
                             </Card>
                             <div className="sm:max-w-sm">
-                                <h3 className="text-foreground text-xl font-semibold">AI Meeting Scheduler</h3>
-                                <p className="text-muted-foreground my-4 text-lg">Effortlessly book and manage your meetings. Stay on top of your schedule.</p>
+                                <h3 className="text-foreground text-xl font-semibold">Qwen3</h3>
+                                <p className="text-muted-foreground my-4 text-lg">A comprehensive suite of dense and mixture-of-experts models from Alibaba</p>
                             </div>
                         </div>
                         <div className="space-y-4">
                             <Card
-                                className="aspect-video overflow-hidden"
+                                className="aspect-video overflow-hidden px-6"
                                 variant="soft">
-                                <Card className="translate-6 h-full" />
+                                <div className="flex h-full items-center justify-center">
+                                    <Image
+                                        src="/meta.png"
+                                        alt="Meta"
+                                        width="1244"
+                                        height="826"
+                                        className="max-h-[80%] max-w-[80%] object-contain"
+                                    />
+                                </div>
                             </Card>
                             <div className="sm:max-w-sm">
-                                <h3 className="text-foreground text-xl font-semibold">AI Meeting Scheduler</h3>
-                                <p className="text-muted-foreground my-4 text-lg">Effortlessly book and manage your meetings. Stay on top of your schedule.</p>
+                                <h3 className="text-foreground text-xl font-semibold">Llama 4</h3>
+                                <p className="text-muted-foreground my-4 text-lg">Native multimodal AI models from Meta that enable text and image inputs</p>
                             </div>
                         </div>
                     </div>

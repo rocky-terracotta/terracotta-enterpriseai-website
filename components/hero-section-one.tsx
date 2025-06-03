@@ -16,7 +16,7 @@ export default function HeroSection() {
                             <div className="md:w-1/2">
                                 <div>
                                     <h1 className="max-w-md text-balance text-5xl font-medium md:text-6xl">Use AI without sending data to the cloud.</h1>
-                                    <p className="text-muted-foreground my-8 max-w-2xl text-balance text-xl">Your own private AI assistant deployed on-site. <br></br>Works out of the box.<br></br>No IT team required.</p>
+                                    <p className="text-muted-foreground my-8 max-w-2xl text-balance text-xl">Your own private AI assistant deployed on-site. <br></br>Works out of the box, no IT team required.</p>
 
                                     <div className="flex items-center gap-3">
                                         <Button
