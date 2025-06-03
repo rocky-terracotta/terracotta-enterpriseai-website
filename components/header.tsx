@@ -81,7 +81,7 @@ export const HeroHeader = () => {
                                 </ul>
                             </div>
                             <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                                <Button
+                                {/* <Button
                                     asChild
                                     variant="ghost"
                                     size="sm"
@@ -89,13 +89,13 @@ export const HeroHeader = () => {
                                     <Link href="#">
                                         <span>Login</span>
                                     </Link>
-                                </Button>
+                                </Button> */}
                                 <Button
                                     asChild
                                     size="sm"
                                     className={cn(isScrolled && 'lg:hidden')}>
                                     <Link href="#">
-                                        <span>Sign Up</span>
+                                        <span>Book a Demo</span>
                                     </Link>
                                 </Button>
                                 <Button
