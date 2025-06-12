@@ -94,7 +94,7 @@ export const HeroHeader = () => {
                                     asChild
                                     size="sm"
                                     className={cn(isScrolled && 'lg:hidden')}>
-                                    <Link href="#">
+                                    <Link target="_blank" href="https://calendly.com/terracotta-demo/30min">
                                         <span>Book a Demo</span>
                                     </Link>
                                 </Button>
@@ -102,7 +102,7 @@ export const HeroHeader = () => {
                                     asChild
                                     size="sm"
                                     className={cn(isScrolled ? 'lg:inline-flex' : 'hidden')}>
-                                    <Link href="#">
+                                    <Link target="_blank" href="https://calendly.com/terracotta-demo/30min">
                                         <span>Book a Demo</span>
                                     </Link>
                                 </Button>

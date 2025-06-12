@@ -13,7 +13,7 @@ export default function CallToActionOne() {
                             <Button
                                 asChild
                                 size="lg">
-                                <Link href="#">Book a Demo</Link>
+                                <Link target="_blank" href="https://calendly.com/terracotta-demo/30min">Book a Demo</Link>
                             </Button>
                             {/* <Button
                                 asChild

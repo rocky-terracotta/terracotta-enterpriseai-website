@@ -23,7 +23,7 @@ export default function HeroSectionOne() {
                                             asChild
                                             size="lg"
                                             className="pr-4.5">
-                                            <Link href="#link">
+                                            <Link target="_blank" href="https://calendly.com/terracotta-demo/30min">
                                                 <span className="text-nowrap">Book a Demo</span>
                                                 <ChevronRight className="opacity-50" />
                                             </Link>

@@ -34,7 +34,7 @@ export default function HeroSectionTwo() {
                                     <Button
                                         asChild
                                         size="lg">
-                                        <Link href="#link">
+                                        <Link target="_blank" href="https://calendly.com/terracotta-demo/30min">
                                             <span className="text-nowrap">Book a Demo</span>
                                         </Link>
                                     </Button>
