@@ -16,11 +16,11 @@ export default function Home() {
       {/* <HeroHeader /> */}
       <HeroSectionTwo />
       {/* <LogoCloudOne /> */}
-      <ContentOne />
+      {/* <ContentOne />
       <FeaturesThree />
       <FeaturesFive />
       <FeaturesTwo />
-      <CallToActionOne />
+      <CallToActionOne /> */}
       <FooterSection />
     </div>
   );

@@ -19,14 +19,14 @@ export default function ContentOne() {
                         <div className="grid sm:grid-cols-5 sm:divide-x">
                             <CodeIllustration className="sm:col-span-2" />
                             <div className="mt-6 sm:col-span-3 sm:mt-0 sm:border-l sm:pl-12">
-                                <h3 className="text-foreground text-xl font-semibold">Marketing Campaigns</h3>
-                                <p className="text-muted-foreground mt-4 text-lg">We'll put together your schedule on automatically. You'll keep app deadlines, and will work on the highest priority items first.</p>
+                                <h3 className="text-foreground text-xl font-semibold">Identify Insights</h3>
+                                <p className="text-muted-foreground mt-4 text-lg">Upload meeting notes, contracts, or case files — your AI will pull out key points, risks, action items, and unanswered questions in seconds.</p>
                             </div>
                         </div>
                         <div className="grid sm:grid-cols-5 sm:divide-x">
                             <div className="pt-12 sm:col-span-3 sm:border-r sm:pr-12">
-                                <h3 className="text-foreground text-xl font-semibold">AI Meeting Scheduler</h3>
-                                <p className="text-muted-foreground mt-4 text-lg">Ask the chat to create or update your events. Ask it how much time you've spent on demo calls last week. Or have it prepare today's agendas.</p>
+                                <h3 className="text-foreground text-xl font-semibold">Create Reports</h3>
+                                <p className="text-muted-foreground mt-4 text-lg">Feed in raw data or messy documents — get clean, well-structured summaries, analysis or reports automatically.</p>
                             </div>
                             <div className="row-start-1 flex items-center justify-center pt-12 sm:col-span-2 sm:row-start-auto">
                                 <ScheduleIllustation className="pt-8" />

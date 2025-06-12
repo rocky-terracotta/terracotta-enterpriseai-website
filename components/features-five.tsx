@@ -26,7 +26,7 @@ export default function FeaturesFive() {
                             <div>
                                 <div className="flex items-center gap-2">
                                     <Target className="size-5" />
-                                    <h3 className="text-foreground text-lg font-semibold">Plug and Play</h3>
+                                    <h3 className="text-foreground text-lg font-semibold">Setup in 5 Minutes</h3>
                                 </div>
                                 <p className="text-muted-foreground mt-3 text-balance">Simply connect to power and Wi-Fi — and you’re ready to go.</p>
                             </div>
@@ -36,7 +36,7 @@ export default function FeaturesFive() {
                                     <CalendarCheck className="size-5" />
                                     <h3 className="text-foreground text-lg font-semibold">Ultra Compact</h3>
                                 </div>
-                                <p className="text-muted-foreground mt-3 text-balance">Massive oomph and raw computational power for the size of a Big Mac.</p>
+                                <p className="text-muted-foreground mt-3 text-balance">Punches above its weight. About the size of a book.</p>
                             </div>
                         </div>
                     </div>
