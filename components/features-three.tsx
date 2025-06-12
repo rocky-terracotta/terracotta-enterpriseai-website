@@ -19,7 +19,7 @@ export default function FeaturesThree() {
 
                     <div className="grid gap-4 sm:grid-cols-2">
                         <Card
-                            variant="soft"
+                            // variant="soft"
                             className="p-6">
                             <div className="flex items-center justify-center">
                                 {/* <CodeIllustration className="w-full" /> */}
@@ -37,7 +37,7 @@ export default function FeaturesThree() {
                             </div>
                         </Card>
                         <Card
-                            variant="soft"
+                            // variant="soft"
                             className="p-6">
                             <div className="flex items-center justify-center">
                                 {/* <ScheduleIllustation className="border" /> */}
@@ -50,7 +50,7 @@ export default function FeaturesThree() {
                                 />
                             </div>
                             <div className="text-center">
-                                <h3 className="text-foreground text-xl font-semibold">Confide in AI with Confidence</h3>
+                                <h3 className="text-foreground text-xl font-semibold">Confide in with Confidence</h3>
                                 <p className="text-muted-foreground mt-4 text-balance text-lg">Provide AI with context about your business without uploading information to the cloud.</p>
                             </div>
                         </Card>
