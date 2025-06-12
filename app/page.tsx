@@ -1,21 +1,26 @@
 import { HeroHeader } from "@/components/header";
-import HeroSection from "@/components/hero-section-one";
+// import HeroSection from "@/components/hero-section-one";
 import Image from "next/image";
 import ContentOne from "@/components/content-one";
 import FeaturesThree from "@/components/features-three";
 import FeaturesTwo from "@/components/features-two"
 import FeaturesFive from "@/components/features-five";
 import FooterSection from "@/components/footer-one";
+import CallToActionOne from "@/components/call-to-action-one";
+// import LogoCloudOne from "@/components/logo-cloud-one";
+import HeroSectionTwo from "@/components/hero-section-two";
 
 export default function Home() {
   return (
     <div>
       {/* <HeroHeader /> */}
-      <HeroSection />
+      <HeroSectionTwo />
+      {/* <LogoCloudOne /> */}
       <ContentOne />
       <FeaturesThree />
       <FeaturesFive />
       <FeaturesTwo />
+      <CallToActionOne />
       <FooterSection />
     </div>
   );

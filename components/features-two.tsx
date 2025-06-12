@@ -7,8 +7,8 @@ export default function FeaturesTwo() {
             <div className="bg-muted/50 py-24">
                 <div className="mx-auto max-w-5xl px-6">
                     <div>
-                        <h2 className="text-foreground text-4xl font-semibold">Choose from the world's best open-source AI models</h2>
-                        <p className="text-muted-foreground mb-12 mt-4 text-balance text-lg">Get access to state-of-the-art models like DeepSeek, Qwen and Llama at no additional cost — and switch anytime.</p>
+                        <h2 className="text-foreground text-4xl font-semibold">Choose from the world's best open-source AI models</h2><p className="text-muted-foreground mb-12 mt-4 text-balance text-lg">Use state-of-the-art models at no additional cost — and switch anytime.</p>
+                        
                     </div>
                     <div className="mt-8 grid gap-4 sm:grid-cols-2 md:mt-16 md:grid-cols-3">
                         <div className="space-y-4">

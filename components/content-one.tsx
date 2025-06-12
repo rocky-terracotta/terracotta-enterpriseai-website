@@ -7,12 +7,12 @@ import { Button } from '@/components/ui/button'
 export default function ContentOne() {
     return (
         <section>
-            <div className="bg-muted/50 py-24">
+            <div id="features" className="bg-muted/50 py-24">
                 <div className="mx-auto w-full max-w-5xl px-6">
                     <div>
-                        <span className="text-primary">Smart Editor</span>
-                        <h2 className="text-foreground mt-4 text-4xl font-semibold">Ask Tailark to Edit anything</h2>
-                        <p className="text-muted-foreground mb-12 mt-4 text-lg">Efficient content creation is our mission. With Tailark, you can effortlessly edit text, generate code snippets, format documents, create visualizations from data, and seamlessly integrate with your existing workflow.</p>
+                        <span className="text-primary">Designed for the enterprise</span>
+                        <h2 className="text-foreground mt-4 text-4xl font-semibold">Let AI handle the grunt work</h2>
+                        <p className="text-muted-foreground mb-12 mt-4 text-lg">Summarize documents, draft responses, extract insights with ease. </p>
                     </div>
 
                     <div className="border-foreground/5 space-y-6 [--color-border:color-mix(in_oklab,var(--color-foreground)10%,transparent)] sm:space-y-0 sm:divide-y">

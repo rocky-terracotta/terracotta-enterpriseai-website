@@ -1,15 +1,15 @@
 'use client'
 import Link from 'next/link'
-import { Logo } from '@/components/logo'
+import { Logo, LogoIcon } from '@/components/logo'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import { cn } from '@/lib/utils'
 
 const menuItems = [
-    { name: 'Features', href: '#link' },
-    { name: 'Pricing', href: '#link' },
-    { name: 'About', href: '#link' },
+    { name: 'About', href: '/about' },
+    { name: 'Features', href: '#features' },
+    // { name: 'Pricing', href: '#link' },
 ]
 
 export const HeroHeader = () => {
@@ -29,13 +29,13 @@ export const HeroHeader = () => {
                 data-state={menuState && 'active'}
                 className={cn('fixed z-20 w-full transition-all duration-300', isScrolled && 'bg-background/75 border-b border-black/5 backdrop-blur-lg')}>
                 <div className="mx-auto max-w-5xl px-6">
-                    <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0">
+                    <div className={cn('relative flex flex-wrap items-center justify-between gap-6 py-6 transition-all duration-200 lg:gap-0', isScrolled && 'py-3')}>
                         <div className="flex w-full justify-between gap-6 lg:w-auto">
                             <Link
                                 href="/"
                                 aria-label="home"
                                 className="flex items-center space-x-2">
-                                <Logo />
+                                <LogoIcon />
                             </Link>
 
                             <button
@@ -103,7 +103,7 @@ export const HeroHeader = () => {
                                     size="sm"
                                     className={cn(isScrolled ? 'lg:inline-flex' : 'hidden')}>
                                     <Link href="#">
-                                        <span>Get Started</span>
+                                        <span>Book a Demo</span>
                                     </Link>
                                 </Button>
                             </div>

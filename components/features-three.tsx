@@ -4,6 +4,7 @@ import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group'
 import { Bold, Calendar1, Ellipsis, Italic, Strikethrough, Underline } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
+import Image from 'next/image'
 
 export default function FeaturesThree() {
     return (
@@ -11,31 +12,46 @@ export default function FeaturesThree() {
             <div className="py-24">
                 <div className="mx-auto w-full max-w-5xl px-6">
                     <div>
-                        <h2 className="text-foreground mt-4 text-4xl font-semibold">Personal AI, with you Anywhere</h2>
-                        <p className="text-muted-foreground mb-12 mt-4 text-balance text-lg">Quick AI lives a single hotkey away - ready to quickly appear as a floating window above your other apps. Get instant assistance whether you're browsing, coding, or writing documents.</p>
+                        <h2 className="text-foreground mt-4 text-4xl font-semibold">Your data stays 100% local.</h2>
+                        <p className="text-muted-foreground mb-12 mt-4 text-balance text-lg">
+                        Perfect for working with sensitive data</p>
                     </div>
 
                     <div className="grid gap-4 sm:grid-cols-2">
                         <Card
                             variant="soft"
                             className="p-6">
-                            <div className="flex aspect-video items-center justify-center">
-                                <CodeIllustration className="w-full" />
+                            <div className="flex items-center justify-center">
+                                {/* <CodeIllustration className="w-full" /> */}
+                                <Image
+                                    src="/private_by_design.png"
+                                    alt="A cloud with a red cross"
+                                    width="1024"
+                                    height="1024"
+                                    className="max-h-[80%] max-w-[80%] object-contain"
+                                />
                             </div>
                             <div className="text-center">
-                                <h3 className="text-foreground text-xl font-semibold">Marketing Campaigns</h3>
-                                <p className="text-muted-foreground mt-4 text-balance text-lg">Effortlessly plan and execute your marketing campaigns organized.</p>
+                                <h3 className="text-foreground text-xl font-semibold">Private by Design</h3>
+                                <p className="text-muted-foreground mt-4 text-balance text-lg">Your queries are never sent to external servers. All processing happens locally on your office unit - even without internet access.</p>
                             </div>
                         </Card>
                         <Card
                             variant="soft"
                             className="p-6">
-                            <div className="flex aspect-video items-center justify-center">
-                                <ScheduleIllustation className="border" />
+                            <div className="flex items-center justify-center">
+                                {/* <ScheduleIllustation className="border" /> */}
+                                <Image
+                                    src="/private_knowledge_base.png"
+                                    alt="A folder with a lock"
+                                    width="1024"
+                                    height="1024"
+                                    className="max-h-[80%] max-w-[80%] object-contain"
+                                />
                             </div>
                             <div className="text-center">
-                                <h3 className="text-foreground text-xl font-semibold">AI Meeting Scheduler</h3>
-                                <p className="text-muted-foreground mt-4 text-balance text-lg">Effortlessly book and manage your meetings. Stay on top of your schedule.</p>
+                                <h3 className="text-foreground text-xl font-semibold">Build a Local Knowledge Base</h3>
+                                <p className="text-muted-foreground mt-4 text-balance text-lg">Chat with your documents without uploading them to the cloud.</p>
                             </div>
                         </Card>
                     </div>

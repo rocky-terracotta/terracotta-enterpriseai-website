@@ -5,7 +5,7 @@ import { HeroHeader } from './header'
 import { ChevronRight, CirclePlay } from 'lucide-react'
 import Image from 'next/image'
 
-export default function HeroSection() {
+export default function HeroSectionOne() {
     return (
         <>
             <HeroHeader />
