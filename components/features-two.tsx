@@ -13,8 +13,7 @@ export default function FeaturesTwo() {
                     <div className="mt-8 grid gap-4 sm:grid-cols-2 md:mt-16 md:grid-cols-3">
                         <div className="space-y-4">
                             <Card
-                                className="aspect-video overflow-hidden px-6"
-                                variant="soft">
+                                className="aspect-video overflow-hidden px-6">
                                 <div className="flex h-full items-center justify-center">
                                     <Image
                                         src="/deepseek.png"
@@ -32,8 +31,7 @@ export default function FeaturesTwo() {
                         </div>
                         <div className="space-y-4">
                             <Card
-                                className="aspect-video overflow-hidden px-6"
-                                variant="soft">
+                                className="aspect-video overflow-hidden px-6">
                                 <div className="flex h-full items-center justify-center">
                                     <Image
                                         src="/qwen3.png"
@@ -51,8 +49,7 @@ export default function FeaturesTwo() {
                         </div>
                         <div className="space-y-4">
                             <Card
-                                className="aspect-video overflow-hidden px-6"
-                                variant="soft">
+                                className="aspect-video overflow-hidden px-6">
                                 <div className="flex h-full items-center justify-center">
                                     <Image
                                         src="/meta.png"
