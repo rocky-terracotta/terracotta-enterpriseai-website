@@ -1,7 +1,7 @@
 'use client'
 import { cn } from '@/lib/utils'
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group'
-import { Bold, Calendar1, Ellipsis, Italic, Strikethrough, Underline } from 'lucide-react'
+import { Bold, Calendar1, Ellipsis, Italic, Strikethrough, Underline, MessageCircle, FileText, UploadCloud } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export default function ContentOne() {
@@ -17,10 +17,10 @@ export default function ContentOne() {
 
                     <div className="border-foreground/5 space-y-6 [--color-border:color-mix(in_oklab,var(--color-foreground)10%,transparent)] sm:space-y-0 sm:divide-y">
                         <div className="grid sm:grid-cols-5 sm:divide-x">
-                            <CodeIllustration className="sm:col-span-2" />
-                            <div className="mt-6 sm:col-span-3 sm:mt-0 sm:border-l sm:pl-12">
+                            <IdentifyInsightsIllustration className="sm:col-span-2" />
+                            <div className="mt-6 mb-6 sm:col-span-3 sm:mt-0 sm:border-l sm:pl-12">
                                 <h3 className="text-foreground text-xl font-semibold">Identify Insights</h3>
-                                <p className="text-muted-foreground mt-4 text-lg">Upload meeting notes, contracts, or case files — your AI will pull out key points, risks, action items, and unanswered questions in seconds.</p>
+                                <p className="text-muted-foreground mt-4 text-lg">Spot sales trends, customer pain points and other insights from notes, emails, CRM exports, and more.</p>
                             </div>
                         </div>
                         <div className="grid sm:grid-cols-5 sm:divide-x">
@@ -29,7 +29,7 @@ export default function ContentOne() {
                                 <p className="text-muted-foreground mt-4 text-lg">Feed in raw data or messy documents — get clean, well-structured summaries, analysis or reports automatically.</p>
                             </div>
                             <div className="row-start-1 flex items-center justify-center pt-12 sm:col-span-2 sm:row-start-auto">
-                                <ScheduleIllustation className="pt-8" />
+                                <CreateReportsIllustration className="pt-2" />
                             </div>
                         </div>
                     </div>
@@ -99,18 +99,30 @@ export const ScheduleIllustation = ({ className, variant = 'elevated' }: Illustr
     )
 }
 
-export const CodeIllustration = ({ className }: { className?: string }) => {
+export const IdentifyInsightsIllustration = ({ className }: { className?: string }) => {
     return (
-        <div className={cn('[mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_50%,transparent_100%)]', className)}>
-            <ul className="text-muted-foreground mx-auto w-fit font-mono text-2xl font-medium">
-                {['Images', 'Variables', 'Pages', 'Components', 'Styles'].map((item, index) => (
-                    <li
-                        key={index}
-                        className={cn(index == 2 && "text-foreground before:absolute before:-translate-x-[110%] before:text-orange-500 before:content-['Import']")}>
-                        {item}
-                    </li>
-                ))}
-            </ul>
+        <div className={cn('relative flex flex-col items-center gap-4', className)}>
+            <div className="relative bg-background border border-foreground/10 rounded-xl px-4 py-3 shadow-md flex items-center max-w-xs">
+                <span className="text-base text-foreground font-medium">What were the <span className="text-red-500">main objections</span> raised in our last 20 sales calls?</span>
+            </div>
+            <div className="flex items-center gap-1 mb-2">
+                <FileText className="w-5 h-5 text-muted-foreground" />
+                <span className="ml-2 text-xs text-muted-foreground">20 call transcripts uploaded</span>
+            </div>
+        </div>
+    )
+}
+
+export const CreateReportsIllustration = ({ className }: { className?: string }) => {
+    return (
+        <div className={cn('relative flex flex-col items-center gap-4', className)}>
+            <div className="relative bg-background border border-foreground/10 rounded-xl px-4 py-3 shadow-md flex items-center max-w-xs">
+                <span className="text-base text-foreground font-medium">Summarize this week's budget meeting notes into a report with action items.</span>
+            </div>
+            <div className="flex items-center gap-1 mb-2">
+                <FileText className="w-5 h-5 text-muted-foreground" />
+                <span className="ml-2 text-xs text-muted-foreground">24-25 Budget Uploaded</span>
+            </div>
         </div>
     )
 }
