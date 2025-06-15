@@ -8,12 +8,12 @@ import { cn } from '@/lib/utils'
 
 const menuItems = [
     // { name: 'About', href: '/about' },
-    { name: 'Features', href: '#features' },
+    // { name: 'Features', href: '#features' },
     {
         name: 'Industries',
         subItems: [
-            { name: 'Law', href: '#law' },
-            { name: 'Accounting', href: '#accounting' },
+            { name: 'Law', href: '/law' },
+            // { name: 'Accounting', href: '#accounting' },
         ],
     },
     // { name: 'Pricing', href: '#link' },

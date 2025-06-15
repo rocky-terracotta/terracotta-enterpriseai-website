@@ -1,25 +1,25 @@
 import { HeroHeader } from "@/components/header";
-// import HeroSection from "@/components/hero-section-one";
 import Image from "next/image";
-import ContentOne from "@/components/home/content-one";
-import FeaturesThree from "@/components/home/features-three";
-import FeaturesTwo from "@/components/home/features-two"
-import FeaturesFive from "@/components/home/features-five";
+import ContentOne from "@/components/law/content-one";
+import FeaturesThree from "@/components/law/features-three";
+import FeaturesTwo from "@/components/law/features-two"
+import FeaturesFive from "@/components/law/features-five";
 import FooterSection from "@/components/footer-one";
-import CallToActionOne from "@/components/home/call-to-action-one";
-// import LogoCloudOne from "@/components/logo-cloud-one";
-import HeroSectionTwo from "@/components/home/hero-section-two";
+import CallToActionOne from "@/components/law/call-to-action-one";
+import HeroSectionTwo from "@/components/law/hero-section-two";
+import FAQsThree from "@/components/law/faqs-section-three";
+import FeaturesEleven from "@/components/law/features-eleven";
 
 export default function Home() {
   return (
     <div>
-      {/* <HeroHeader /> */}
       <HeroSectionTwo />
-      {/* <LogoCloudOne /> */}
       <ContentOne />
       <FeaturesThree />
+      <FeaturesEleven />
       <FeaturesFive />
       <FeaturesTwo />
+      <FAQsThree />
       <CallToActionOne />
       <FooterSection />
     </div>

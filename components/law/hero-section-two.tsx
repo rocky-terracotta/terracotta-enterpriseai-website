@@ -27,8 +27,8 @@ export default function HeroSectionTwo() {
                                     </div>
                                     <span className="font-medium">🤖 Introducing Terracotta</span>
                                 </Link> */}
-                                <h1 className="mx-auto mt-8 max-w-3xl text-balance text-4xl font-bold tracking-tight sm:text-5xl">Use AI without sending data to the cloud.</h1>
-                                <p className="text-muted-foreground mx-auto my-6 max-w-xl text-balance text-xl">Your own private AI assistant deployed on-site. <br></br>Works out of the box, no IT team required.</p>
+                                <h1 className="mx-auto mt-8 max-w-3xl text-balance text-4xl font-bold tracking-tight sm:text-5xl">Private AI for Law Firms</h1>
+                                <p className="text-muted-foreground mx-auto my-6 max-w-xl text-balance text-xl">Handle legal documents, client data, and internal queries with your own AI assistant hosted on-premise.</p>
 
                                 <div className="flex items-center justify-center gap-3">
                                     <Button

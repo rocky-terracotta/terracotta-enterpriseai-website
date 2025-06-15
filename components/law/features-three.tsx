@@ -33,7 +33,7 @@ export default function FeaturesThree() {
                             </div>
                             <div className="text-center">
                                 <h3 className="text-foreground text-xl font-semibold">Private by Design</h3>
-                                <p className="text-muted-foreground mt-4 text-balance text-lg">Your queries are never sent to external servers. All processing happens locally on your office unit - even without internet access.</p>
+                                <p className="text-muted-foreground mt-4 text-balance text-lg">No queries are sent to the cloud. All processing happens locally, within your firm’s premises — even without internet access.</p>
                             </div>
                         </Card>
                         <Card
@@ -50,8 +50,8 @@ export default function FeaturesThree() {
                                 />
                             </div>
                             <div className="text-center">
-                                <h3 className="text-foreground text-xl font-semibold">Confide in with Confidence</h3>
-                                <p className="text-muted-foreground mt-4 text-balance text-lg">Provide AI with context about your business without uploading information to the cloud.</p>
+                                <h3 className="text-foreground text-xl font-semibold">Work with sensitive case files</h3>
+                                <p className="text-muted-foreground mt-4 text-balance text-lg">Provide the AI with legal documents, contracts, and case materials without risking data exposure or violating confidentiality obligations.</p>
                             </div>
                         </Card>
                     </div>
