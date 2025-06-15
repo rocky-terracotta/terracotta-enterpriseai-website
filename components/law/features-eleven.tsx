@@ -10,7 +10,7 @@ export default function FeaturesEleven() {
                     <h2 className="text-foreground text-balance text-3xl font-semibold md:text-4xl">
                     Leverage your Document Database
                     </h2>
-                    <p class="text-muted-foreground mb-12 mt-4 text-balance text-lg">Apply your firm’s past work to new matters — with a local AI that understands your contracts, case notes, and legal reasoning.</p>
+                    <p className="text-muted-foreground mb-12 mt-4 text-balance text-lg">Apply your firm's past work to new matters — with a local AI that understands your contracts, case notes, and legal reasoning.</p>
                     <div className="@container mt-12 space-y-12">
                         <Card
                             className="relative overflow-hidden p-0 sm:col-span-2">
