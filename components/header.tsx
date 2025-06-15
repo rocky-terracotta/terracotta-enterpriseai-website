@@ -6,7 +6,28 @@ import { Button } from '@/components/ui/button'
 import React from 'react'
 import { cn } from '@/lib/utils'
 
-const menuItems = [
+interface MenuItemWithHref {
+    name: string;
+    href: string;
+}
+
+interface SubMenuItem {
+    name: string;
+    href: string;
+}
+
+interface MenuItemWithSubItems {
+    name: string;
+    subItems: SubMenuItem[];
+}
+
+type MenuItem = MenuItemWithHref | MenuItemWithSubItems;
+
+function isMenuItemWithSubItems(item: MenuItem): item is MenuItemWithSubItems {
+    return ('subItems' in item);
+}
+
+const menuItems: MenuItem[] = [
     // { name: 'About', href: '/about' },
     // { name: 'Features', href: '#features' },
     {
@@ -65,7 +86,7 @@ export const HeroHeader = () => {
                                             >
                                                 <span>{item.name}</span>
                                             </Button>
-                                            {item.subItems && (
+                                            {isMenuItemWithSubItems(item) && item.subItems && (
                                                 <ul className="absolute left-0 top-full min-w-[150px] rounded-md bg-white shadow-lg z-30 hidden group-hover:block">
                                                     {item.subItems.map((sub, subIdx) => (
                                                         <li key={subIdx}>
@@ -90,7 +111,7 @@ export const HeroHeader = () => {
                                 <ul className="space-y-6 text-base">
                                     {menuItems.map((item, index) => (
                                         <li key={index}>
-                                            {item.subItems ? (
+                                            {isMenuItemWithSubItems(item) && item.subItems ? (
                                                 <>
                                                     <span className="font-semibold">{item.name}</span>
                                                     <ul className="ml-4 mt-2 space-y-2">
@@ -107,12 +128,14 @@ export const HeroHeader = () => {
                                                     </ul>
                                                 </>
                                             ) : (
-                                                <Link
-                                                    href={item.href}
-                                                    className="text-muted-foreground hover:text-accent-foreground block duration-150"
-                                                >
-                                                    <span>{item.name}</span>
-                                                </Link>
+                                                'href' in item && (
+                                                    <Link
+                                                        href={item.href}
+                                                        className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                                                    >
+                                                        <span>{item.name}</span>
+                                                    </Link>
+                                                )
                                             )}
                                         </li>
                                     ))}
