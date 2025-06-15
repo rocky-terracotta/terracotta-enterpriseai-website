@@ -7,8 +7,8 @@ const links = [
     //     href: '/about',
     // },
     {
-        title: 'Features',
-        href: '#features',
+        title: 'Legal Industry',
+        href: '/law',
     },
     // {
     //     title: 'Solution',
