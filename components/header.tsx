@@ -9,6 +9,13 @@ import { cn } from '@/lib/utils'
 const menuItems = [
     // { name: 'About', href: '/about' },
     { name: 'Features', href: '#features' },
+    {
+        name: 'Industries',
+        subItems: [
+            { name: 'Law', href: '#law' },
+            { name: 'Accounting', href: '#accounting' },
+        ],
+    },
     // { name: 'Pricing', href: '#link' },
 ]
 
@@ -49,17 +56,29 @@ export const HeroHeader = () => {
                             <div className="m-auto hidden size-fit lg:block">
                                 <ul className="flex gap-1">
                                     {menuItems.map((item, index) => (
-                                        <li key={index}>
+                                        <li key={index} className="relative group">
                                             <Button
                                                 asChild
                                                 variant="ghost"
-                                                size="sm">
-                                                <Link
-                                                    href={item.href}
-                                                    className="text-base">
-                                                    <span>{item.name}</span>
-                                                </Link>
+                                                size="sm"
+                                                className="flex items-center"
+                                            >
+                                                <span>{item.name}</span>
                                             </Button>
+                                            {item.subItems && (
+                                                <ul className="absolute left-0 top-full min-w-[150px] rounded-md bg-white shadow-lg z-30 hidden group-hover:block">
+                                                    {item.subItems.map((sub, subIdx) => (
+                                                        <li key={subIdx}>
+                                                            <Link
+                                                                href={sub.href}
+                                                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                                            >
+                                                                {sub.name}
+                                                            </Link>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            )}
                                         </li>
                                     ))}
                                 </ul>
@@ -71,11 +90,30 @@ export const HeroHeader = () => {
                                 <ul className="space-y-6 text-base">
                                     {menuItems.map((item, index) => (
                                         <li key={index}>
-                                            <Link
-                                                href={item.href}
-                                                className="text-muted-foreground hover:text-accent-foreground block duration-150">
-                                                <span>{item.name}</span>
-                                            </Link>
+                                            {item.subItems ? (
+                                                <>
+                                                    <span className="font-semibold">{item.name}</span>
+                                                    <ul className="ml-4 mt-2 space-y-2">
+                                                        {item.subItems.map((sub, subIdx) => (
+                                                            <li key={subIdx}>
+                                                                <Link
+                                                                    href={sub.href}
+                                                                    className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                                                                >
+                                                                    {sub.name}
+                                                                </Link>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </>
+                                            ) : (
+                                                <Link
+                                                    href={item.href}
+                                                    className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                                                >
+                                                    <span>{item.name}</span>
+                                                </Link>
+                                            )}
                                         </li>
                                     ))}
                                 </ul>
