@@ -19,7 +19,7 @@ export default function Home() {
       <FeaturesEleven />
       <FeaturesFive />
       <FeaturesTwo />
-      <FAQsThree />
+      {/* <FAQsThree /> */}
       <CallToActionOne />
       <FooterSection />
     </div>

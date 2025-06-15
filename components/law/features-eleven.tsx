@@ -8,9 +8,9 @@ export default function FeaturesEleven() {
             <div className="py-24">
                 <div className="mx-auto w-full max-w-3xl px-6">
                     <h2 className="text-foreground text-balance text-3xl font-semibold md:text-4xl">
-                    Build a Legal Knowledge Base
+                    Leverage your Document Database
                     </h2>
-                    <p class="text-muted-foreground mb-12 mt-4 text-balance text-lg">Turn internal documents into a private AI search engine.</p>
+                    <p class="text-muted-foreground mb-12 mt-4 text-balance text-lg">Apply your firm’s past work to new matters — with a local AI that understands your contracts, case notes, and legal reasoning.</p>
                     <div className="@container mt-12 space-y-12">
                         <Card
                             className="relative overflow-hidden p-0 sm:col-span-2">
@@ -31,11 +31,13 @@ export default function FeaturesEleven() {
                             </div>
                             <div className="space-y-2">
                                 <h3 className="text-xl font-medium">Smart Search</h3>
-                                <p className="text-muted-foreground">Enhance your text with smart editing suggestions and style refinements.</p>
+                                <p className="text-muted-foreground">Ask questions and get answers from your own documents
+                                </p>
                             </div>
                             <div className="space-y-2">
                                 <h3 className="text-xl font-medium">Track Sources</h3>
-                                <p className="text-muted-foreground">Create visually appealing layouts that capture your audience's attention.</p>
+                                <p className="text-muted-foreground">Responses include citations — know exactly where the answer came from
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -52,14 +54,14 @@ const AIAssistantIllustration = () => {
             className="relative space-y-4 p-6">
             <div className="w-fit">
                 {/* <Sparkles className="size-3.5 fill-purple-300 stroke-purple-300" /> */}
-                <p className="mt-2 line-clamp-2 text-sm">What are the key clauses in this employment agreement under Hong Kong law?</p>
+                <p className="mt-2 line-clamp-2 text-sm">What clauses in our previous NDAs could support this new client negotiation?</p>
                 <ul
                     role="list"
                     className="text-muted-foreground mt-3 space-y-2 text-sm">
                     {[
-                        { value: '100%', emoji: '🔐', label: 'data stays on-site' },
-                        { value: '0', emoji: '☁️', label: 'Cloud dependencies' },
-                        // { value: 'PDPO', emoji: '📜', label: 'Compliant AI assistant' },
+                        { value: '1000+', emoji: '📄', label: 'Documents Indexed' },
+                        { value: '95%', emoji: '🔍', label: 'Search Precision' },
+                        { value: '100%', emoji: '📌', label: 'Source-Linked Answers' },
                     ].map((stat, index) => (
                         <li
                             key={index}
