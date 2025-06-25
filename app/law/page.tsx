@@ -18,7 +18,7 @@ export default function Home() {
       <FeaturesThree />
       <FeaturesEleven />
       <FeaturesFive />
-      <FeaturesTwo />
+      {/* <FeaturesTwo /> */}
       {/* <FAQsThree /> */}
       <CallToActionOne />
       <FooterSection />
